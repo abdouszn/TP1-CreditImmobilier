@@ -29,15 +29,33 @@
             @Html.TextBoxFor(model => @Model.empruntedCapital)
         </div>
         <div class="editor-label">
-            @Html.LabelFor(model => @Model.date)
-            @Html.TextBoxFor(model => @Model.date)
+            @Html.LabelFor(model => @Model.montantEcheance)
+            @Html.TextBoxFor(model => @Model.montantEcheance)
         </div>
-
-
-
-
-       
-
+        <div class="editor-label">
+            @Html.LabelFor(model => @Model.montantEcheance)
+            @Html.TextBoxFor(model => @Model.montantEcheance)
+        </div>
+        <div class="editor-label">
+            @Html.LabelFor(model => @Model.nbrEcheance)
+            @Html.TextBoxFor(model => @Model.nbrEcheance)
+        </div>
+        <div class="editor-label">
+            @Html.LabelFor(model => @Model.tauxAssurance)
+            @Html.TextBoxFor(model => @Model.tauxAssurance)
+        </div>
+        <div class="editor-label">
+            @Html.LabelFor(model => @Model.tauxAssurancePeriod)
+            @Html.TextBoxFor(model => @Model.tauxAssurancePeriod)
+        </div>
+        <div class="editor-label">
+            @Html.LabelFor(model => @Model.tauxInteretAnnuel)
+            @Html.TextBoxFor(model => @Model.tauxInteretAnnuel)
+        </div>
+        <div class="editor-label">
+            @Html.LabelFor(model => @Model.tauxInteretPeriod)
+            @Html.TextBoxFor(model => @Model.tauxInteretPeriod)
+        </div>
         <p>
             <input type="submit" value="Enregistrer" />
         </p>
@@ -45,5 +63,5 @@
 }
 
 <div>
-    @Html.ActionLink("Back to List", "Index")
+    @Html.ActionLink("Back to List", "Create")
 </div>
