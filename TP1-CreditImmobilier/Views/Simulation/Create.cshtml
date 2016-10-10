@@ -1,0 +1,49 @@
+﻿@model  TP1_CreditImmobilier.Models.Simulation
+
+@{
+    ViewBag.Title = "View";}
+
+
+<h2>Enregistrement des produits</h2>
+
+@using (Html.BeginForm())
+{
+    @Html.ValidationSummary(true)
+    <fieldset>
+        <legend>Nouveau produit</legend>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => @Model.clientName)
+            @Html.TextBoxFor(model => @Model.clientName)
+        </div>
+        <div class="editor-label">
+            @Html.LabelFor(model => @Model.date)
+            @Html.TextBoxFor(model => @Model.date)
+        </div>
+        <div class="editor-label">
+            @Html.LabelFor(model => @Model.dureCreditMois)
+            @Html.TextBoxFor(model => @Model.dureCreditMois)
+        </div>
+        <div class="editor-label">
+            @Html.LabelFor(model => @Model.empruntedCapital)
+            @Html.TextBoxFor(model => @Model.empruntedCapital)
+        </div>
+        <div class="editor-label">
+            @Html.LabelFor(model => @Model.date)
+            @Html.TextBoxFor(model => @Model.date)
+        </div>
+
+
+
+
+       
+
+        <p>
+            <input type="submit" value="Enregistrer" />
+        </p>
+    </fieldset>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
